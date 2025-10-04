@@ -20,7 +20,7 @@ toggleButton.addEventListener('click', () => {
     `;
 
     // Change GIF
-    gif.src = 'images/11.webp';
+    gif.src = '11.webp';
   } else {
     body.classList.remove('theme-red');
     body.classList.add('theme-blue');
@@ -36,7 +36,7 @@ toggleButton.addEventListener('click', () => {
     `;
 
     // Change GIF
-    gif.src = 'images/3.webp';
+    gif.src = '3.webp';
   }
 });
 

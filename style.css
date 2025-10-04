@@ -119,13 +119,13 @@ p {
   background: linear-gradient(to bottom right, #8f1515e0, #000000);
 }*/
 .theme-red {
-  background-image: url('../images/y.jpg');
+  background-image: url('y.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .theme-blue {
-  background-image: url('../images/wallhaven-1ppo83.jpg');
+  background-image: url('wallhaven-1ppo83.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
