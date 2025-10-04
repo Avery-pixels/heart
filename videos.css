@@ -75,9 +75,23 @@ video {
 .back {
   text-align: center;
   display: block;
-  margin: 30px auto 0;
+  margin: 30px 20px;
   color: #666;
   text-decoration: none;
+  color: #ff4d4d;
+  animation: neon-pulse 2s infinite alternate;
+}
+
+@keyframes neon-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff1a1a, 0 0 20px #ff0000,
+      0 0 40px #b30000;
+  }
+  50% {
+    text-shadow: 0 0 10px #594dff, 0 0 20px #1100ff, 0 0 60px #0c00b3,
+      0 0 100px #0d0080;
+  }
 }
 
 .page-footer {
