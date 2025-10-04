@@ -1,11 +1,14 @@
 /* styles.css - Black and Red theme */
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 body {
   font-family: 'Georgia', serif;
   background-color: #0e0e0e;
   color: #f2f2f2;
   line-height: 1.6;
-  margin: 0;
   padding: 0;
 }
 
@@ -45,6 +48,12 @@ section {
   background-color: #1a1a1a;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* takes full screen height */
 }
 
 h2 {
@@ -156,10 +165,12 @@ h2 {
 }
 
 .page-footer {
+  position: sticky;
   background-color: #1a1a1a;
   padding: 15px;
   text-align: center;
   font-size: 0.9em;
   border-top: 1px solid #444;
   color: #aaa;
+  top: 100vh;
 }
