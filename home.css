@@ -540,3 +540,23 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(255, 60, 60, 0.5);
 }
+
+.farewell-message {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ff4d4d;
+
+  /* Start hidden */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.farewell-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}

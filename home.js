@@ -48,3 +48,18 @@ function toggleMessage() {
     btn.textContent = 'Read More';
   }
 }
+
+const farewell = document.querySelector('.farewell-message');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        farewell.classList.add('show');
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+observer.observe(farewell);
